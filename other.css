@@ -1,0 +1,133 @@
+/*
+    Defines all remaining styles for the Red Ball Pizza web page.
+
+    Author: Mason Bohanon
+    Date: 8/10/2024
+    File: other.css
+ */
+
+header {
+  position: relative;
+  height: 235px; 
+  overflow: hidden; 
+}
+
+header img {
+  width: 100%; 
+  height: auto; 
+  display: block; 
+}
+
+
+nav.horizontal ul {
+  display: flex;
+  justify-content: space-around;  *
+  align-items: center; 
+  padding: 0; 
+  margin: 0; 
+}
+
+nav.horizontal li {
+  padding-left: 20px;  
+}
+
+
+nav.horizontal a {
+  display: block; 
+  line-height: 50px; 
+}
+
+section#deals {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, auto);
+  gap: 10px;
+}
+
+section#deals div {
+  border: 2px dashed #e60000;
+  padding: 10px;
+  background-color: #f2f2f2;
+  box-sizing: border-box;
+}
+
+section#deals div:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+
+section#deals div:nth-child(even) {
+  background-color: #ffc0cb;
+}
+
+section#deals div h1 {
+  font-weight: bold;
+}
+
+section#deals div p:last-of-type {
+  font-size: 0.65em;
+  text-align: right;
+}
+
+nav.vertical {
+  background-image: url("parlor.jpg");
+  background-repeat: repeat;
+  padding: 10px;
+}
+
+nav.vertical li {
+    border-radius: 10px; 
+    border-radius: 10px 0 0 10px; 
+    padding: 10px; 
+    margin-bottom: 10px; 
+    background: linear-gradient(
+      to right,
+      rgba(154, 20, 23, 1),
+      rgba(154, 20, 23, 0)
+    ); 
+  }
+  
+nav.vertical a {
+  color: white;
+  display: block;
+  text-decoration: none;
+}
+
+aside {
+  background-image: url("parlor.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+aside {
+    padding: 20px; 
+    background-image: url("parlor.jpg"); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+  }
+  
+  aside ul li {
+    padding: 10px 20px; 
+    border: 2px solid rgba(154, 20, 23, 1); 
+    margin-bottom: 10px; 
+    background: linear-gradient(
+      to right,
+      rgba(128, 128, 128, 0.7),
+      rgba(154, 20, 23, 0.7)
+    ); 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); 
+    color: rgb(7, 7, 7); 
+    border-radius: 10px; 
+    background-clip: padding-box; 
+  }
+  
+aside h1 {
+    font-weight: bold; 
+  }
+  
+main {
+  padding: 20px;
+  border-left: 3px solid rgba(154, 20, 23, 1);
+  border-right: 3px solid rgba(154, 20, 23, 1);
+}
